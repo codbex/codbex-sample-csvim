@@ -1,0 +1,31 @@
+{
+    "name": "COUNTRY",
+    "type": "TABLE",
+    "columns": [
+        {
+            "name": "ID",
+            "type": "INTEGER",
+            "length": "0",
+            "nullable": false,
+            "primaryKey": true,
+            "defaultValue": "",
+            "unique": false
+        },
+        {
+            "name": "Name",
+            "type": "VARCHAR",
+            "length": "255",
+            "primaryKey": false,
+            "unique": false,
+            "nullable": false
+        },
+        {
+            "name": "Code",
+            "type": "CHAR",
+            "length": "3",
+            "primaryKey": false,
+            "unique": true,
+            "nullable": false
+        }
+    ]
+}

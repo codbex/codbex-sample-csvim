@@ -1,0 +1,30 @@
+{
+  "files": [
+    {
+      "table": "COUNTRY",
+      "schema": "PUBLIC",
+      "sequence": "COUNTRY_SEQ",
+      "file": "/codbex-sample-csvim/countries/countries.csv",
+      "header": true,
+      "useHeaderNames": true,
+      "delimField": ",",
+      "delimEnclosing": "\"",
+      "distinguishEmptyFromNull": true,
+      "version": "1.0",
+      "locale": "en-GB"
+    },
+    {
+      "table": "CITY",
+      "schema": "PUBLIC",
+      "sequence": "CITY_SEQ",
+      "file": "/codbex-sample-csvim/cities/cities.csv",
+      "header": true,
+      "useHeaderNames": true,
+      "delimField": ",",
+      "delimEnclosing": "\"",
+      "distinguishEmptyFromNull": true,
+      "version": "1.0",
+      "locale": "en-GB"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+    "name": "CITY",
+    "type": "TABLE",
+    "columns": [
+        {
+            "name": "ID",
+            "type": "INTEGER",
+            "length": "0",
+            "nullable": false,
+            "primaryKey": true,
+            "defaultValue": "",
+            "unique": false
+        },
+        {
+            "name": "Name",
+            "type": "VARCHAR",
+            "length": "255",
+            "primaryKey": false,
+            "unique": false,
+            "nullable": false
+        },
+        {
+            "name": "Country",
+            "type": "INTEGER",
+            "primaryKey": false,
+            "unique": false,
+            "nullable": false
+        }
+    ]
+}
