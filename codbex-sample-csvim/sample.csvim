@@ -37,7 +37,7 @@
       "version": "1.0"
     },
     {
-      "table": "CITY",
+      "table": "CITY_LANG",
       "schema": "PUBLIC",
       "sequence": "CITY_LANG_SEQ",
       "file": "/codbex-sample-csvim/cities/cities-lang.csv",
