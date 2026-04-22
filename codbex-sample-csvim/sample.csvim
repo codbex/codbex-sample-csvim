@@ -10,8 +10,19 @@
       "delimField": ",",
       "delimEnclosing": "\"",
       "distinguishEmptyFromNull": true,
-      "version": "1.0",
-      "locale": "en-GB"
+      "version": "1.0"
+    },
+    {
+      "table": "COUNTRY_LANG",
+      "schema": "PUBLIC",
+      "sequence": "COUNTRY_LANG_SEQ",
+      "file": "/codbex-sample-csvim/countries/countries-lang.csv",
+      "header": true,
+      "useHeaderNames": true,
+      "delimField": ",",
+      "delimEnclosing": "\"",
+      "distinguishEmptyFromNull": true,
+      "version": "1.0"
     },
     {
       "table": "CITY",
@@ -23,8 +34,19 @@
       "delimField": ",",
       "delimEnclosing": "\"",
       "distinguishEmptyFromNull": true,
-      "version": "1.0",
-      "locale": "en-GB"
+      "version": "1.0"
+    },
+    {
+      "table": "CITY",
+      "schema": "PUBLIC",
+      "sequence": "CITY_LANG_SEQ",
+      "file": "/codbex-sample-csvim/cities/cities-lang.csv",
+      "header": true,
+      "useHeaderNames": true,
+      "delimField": ",",
+      "delimEnclosing": "\"",
+      "distinguishEmptyFromNull": true,
+      "version": "1.0"
     }
   ]
 }

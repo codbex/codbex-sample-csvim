@@ -1,0 +1,5 @@
+{
+    "module": "codbex-sample-csvim/gen/sample/ui/Entities/City/view.js",
+    "extensionPoint": "application-views",
+    "description": "codbex-sample-csvim - Application View"
+}

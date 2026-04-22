@@ -1,27 +1,37 @@
 {
-    "name": "CITY",
+    "name": "CITY_LANG",
     "type": "TABLE",
     "columns": [
         {
-            "name": "ID",
+            "name": "GUID",
             "type": "INTEGER",
             "length": "0",
             "nullable": false,
             "primaryKey": true,
+            "defaultValue": "",
+            "unique": true
+        },
+        {
+            "name": "Id",
+            "type": "INTEGER",
+            "length": "0",
+            "nullable": false,
+            "primaryKey": false,
             "defaultValue": "",
             "unique": false
         },
         {
             "name": "Name",
             "type": "VARCHAR",
-            "length": "255",
+            "length": "100",
             "primaryKey": false,
             "unique": false,
             "nullable": false
         },
         {
-            "name": "Country",
-            "type": "INTEGER",
+            "name": "Language",
+            "type": "CHAR",
+            "length": "2",
             "primaryKey": false,
             "unique": false,
             "nullable": false
