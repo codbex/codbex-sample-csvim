@@ -66,6 +66,8 @@
     },
     "extName": "{{content}}",
     "t": {
+      "1": "Country",
+      "2": "City",
       "COUNTRY": "Country",
       "COUNTRY_ID": "Id",
       "COUNTRY_NAME": "Name",

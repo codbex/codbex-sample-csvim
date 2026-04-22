@@ -42,18 +42,18 @@
                 "generateDefaultRoles": "false",
                 "generateReport": "false",
                 "icon": "/services/web/resources/unicons/file.svg",
-                "layoutType": "MANAGE",
+                "layoutType": "MANAGE_MASTER",
                 "menuIndex": "100",
                 "menuKey": "country",
                 "menuLabel": "Country",
                 "multilingual": "false",
                 "name": "Country",
                 "perspectiveHeader": "",
-                "perspectiveIcon": "/services/web/resources/unicons/copy.svg",
-                "perspectiveLabel": "Entities",
-                "perspectiveName": "Entities",
+                "perspectiveIcon": "/services/web/resources/unicons/0-plus.svg",
+                "perspectiveLabel": "Country",
+                "perspectiveName": "1",
                 "perspectiveNavId": "",
-                "perspectiveOrder": "100",
+                "perspectiveOrder": "1",
                 "perspectiveRole": "",
                 "title": "Country",
                 "tooltip": "Country",
@@ -111,7 +111,7 @@
                         "widgetType": "DROPDOWN",
                         "relationshipName": "City_Country",
                         "relationshipEntityName": "Country",
-                        "relationshipEntityPerspectiveName": "Entities",
+                        "relationshipEntityPerspectiveName": "1",
                         "relationshipEntityPerspectiveLabel": "Entities"
                     }
                 ],
@@ -123,25 +123,38 @@
                 "generateDefaultRoles": "false",
                 "generateReport": "false",
                 "icon": "/services/web/resources/unicons/file.svg",
-                "layoutType": "MANAGE",
+                "layoutType": "MANAGE_MASTER",
                 "menuIndex": "100",
                 "menuKey": "city",
                 "menuLabel": "City",
                 "multilingual": "false",
                 "name": "City",
                 "perspectiveHeader": "",
-                "perspectiveIcon": "/services/web/resources/unicons/copy.svg",
-                "perspectiveLabel": "Entities",
-                "perspectiveName": "Entities",
+                "perspectiveIcon": "/services/web/resources/unicons/10-plus.svg",
+                "perspectiveLabel": "City",
+                "perspectiveName": "2",
                 "perspectiveNavId": "",
-                "perspectiveOrder": "100",
+                "perspectiveOrder": "2",
                 "perspectiveRole": "",
                 "title": "City",
                 "tooltip": "City",
                 "type": "PRIMARY"
             }
         ],
-        "perspectives": [],
+        "perspectives": [
+            {
+                "name": "1",
+                "label": "Country",
+                "icon": "/services/web/resources/unicons/0-plus.svg",
+                "order": "1"
+            },
+            {
+                "name": "2",
+                "label": "City",
+                "icon": "/services/web/resources/unicons/10-plus.svg",
+                "order": "2"
+            }
+        ],
         "navigations": []
     }
 }
