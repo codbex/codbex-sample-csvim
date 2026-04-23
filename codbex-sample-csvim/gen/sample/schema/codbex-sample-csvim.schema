@@ -1,0 +1,57 @@
+{
+    "schema": {
+        "structures": [
+            {
+                "name": "COUNTRY",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "COUNTRY_ID"
+                    },
+                    {
+                        "type": "VARCHAR",
+                        "length": 255,
+                        "name": "COUNTRY_NAME"
+                    }
+                ]
+            },
+            {
+                "name": "CITY",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "CITY_ID"
+                    },
+                    {
+                        "type": "VARCHAR",
+                        "length": 255,
+                        "name": "CITY_NAME"
+                    },
+                    {
+                        "type": "INTEGER",
+                        "nullable": true,
+                        "name": "CITY_COUNTRY"
+                    }
+                ]
+            },
+            {
+                "name": "City_Country",
+                "type": "foreignKey",
+                "table": "CITY",
+                "constraintName": "City_Country",
+                "columns": "CITY_COUNTRY",
+                "referencedTable": "COUNTRY",
+                "referencedColumns": "COUNTRY_ID"
+            }
+        ]
+    },
+    "datasource": "DefaultDB"
+}

@@ -1,0 +1,160 @@
+{
+    "model": {
+        "entities": [
+            {
+                "properties": [
+                    {
+                        "auditType": "NONE",
+                        "dataAutoIncrement": "true",
+                        "dataName": "COUNTRY_ID",
+                        "dataNullable": "true",
+                        "dataPrimaryKey": "true",
+                        "dataType": "INTEGER",
+                        "description": "",
+                        "name": "Id",
+                        "tooltip": "",
+                        "widgetIsMajor": "true",
+                        "widgetLength": "20",
+                        "widgetSize": "",
+                        "widgetType": "TEXTBOX"
+                    },
+                    {
+                        "auditType": "NONE",
+                        "dataLength": "255",
+                        "dataName": "COUNTRY_NAME",
+                        "dataNullable": "false",
+                        "dataType": "VARCHAR",
+                        "description": "",
+                        "isRequiredProperty": "true",
+                        "name": "Name",
+                        "tooltip": "",
+                        "widgetIsMajor": "true",
+                        "widgetLength": "255",
+                        "widgetSize": "",
+                        "widgetType": "TEXTBOX"
+                    }
+                ],
+                "caption": "Manage entity Country",
+                "dataCount": "SELECT COUNT(*) AS COUNT FROM \"${tablePrefix}COUNTRY\"",
+                "dataName": "COUNTRY",
+                "dataQuery": "",
+                "description": "Manage entity Country",
+                "generateDefaultRoles": "false",
+                "generateReport": "false",
+                "icon": "/services/web/resources/unicons/file.svg",
+                "layoutType": "MANAGE_MASTER",
+                "menuIndex": "100",
+                "menuKey": "country",
+                "menuLabel": "Country",
+                "multilingual": "false",
+                "name": "Country",
+                "perspectiveHeader": "",
+                "perspectiveIcon": "/services/web/resources/unicons/0-plus.svg",
+                "perspectiveLabel": "Country",
+                "perspectiveName": "1",
+                "perspectiveNavId": "",
+                "perspectiveOrder": "1",
+                "perspectiveRole": "",
+                "title": "Country",
+                "tooltip": "Country",
+                "type": "PRIMARY"
+            },
+            {
+                "properties": [
+                    {
+                        "auditType": "NONE",
+                        "dataAutoIncrement": "true",
+                        "dataName": "CITY_ID",
+                        "dataNullable": "true",
+                        "dataPrimaryKey": "true",
+                        "dataType": "INTEGER",
+                        "description": "",
+                        "name": "Id",
+                        "tooltip": "",
+                        "widgetIsMajor": "true",
+                        "widgetLength": "20",
+                        "widgetSize": "",
+                        "widgetType": "TEXTBOX"
+                    },
+                    {
+                        "auditType": "NONE",
+                        "dataLength": "255",
+                        "dataName": "CITY_NAME",
+                        "dataNullable": "false",
+                        "dataType": "VARCHAR",
+                        "description": "",
+                        "isRequiredProperty": "true",
+                        "name": "Name",
+                        "tooltip": "",
+                        "widgetIsMajor": "true",
+                        "widgetLength": "255",
+                        "widgetSize": "",
+                        "widgetType": "TEXTBOX"
+                    },
+                    {
+                        "auditType": "NONE",
+                        "dataName": "CITY_COUNTRY",
+                        "dataNullable": "true",
+                        "dataType": "INTEGER",
+                        "description": "",
+                        "name": "Country",
+                        "tooltip": "",
+                        "widgetDependsOnEntity": "Country",
+                        "widgetDependsOnFilterBy": "Country",
+                        "widgetDependsOnProperty": "Country",
+                        "widgetDependsOnValueFrom": "Id",
+                        "widgetDropDownKey": "Id",
+                        "widgetDropDownValue": "Name",
+                        "widgetIsMajor": "true",
+                        "widgetLength": "20",
+                        "widgetSize": "",
+                        "widgetType": "DROPDOWN",
+                        "relationshipName": "City_Country",
+                        "relationshipEntityName": "Country",
+                        "relationshipEntityPerspectiveName": "1",
+                        "relationshipEntityPerspectiveLabel": "Entities"
+                    }
+                ],
+                "caption": "Manage entity City",
+                "dataCount": "SELECT COUNT(*) AS COUNT FROM \"${tablePrefix}CITY\"",
+                "dataName": "CITY",
+                "dataQuery": "",
+                "description": "Manage entity City",
+                "generateDefaultRoles": "false",
+                "generateReport": "false",
+                "icon": "/services/web/resources/unicons/file.svg",
+                "layoutType": "MANAGE_MASTER",
+                "menuIndex": "100",
+                "menuKey": "city",
+                "menuLabel": "City",
+                "multilingual": "false",
+                "name": "City",
+                "perspectiveHeader": "",
+                "perspectiveIcon": "/services/web/resources/unicons/10-plus.svg",
+                "perspectiveLabel": "City",
+                "perspectiveName": "2",
+                "perspectiveNavId": "",
+                "perspectiveOrder": "2",
+                "perspectiveRole": "",
+                "title": "City",
+                "tooltip": "City",
+                "type": "PRIMARY"
+            }
+        ],
+        "perspectives": [
+            {
+                "name": "1",
+                "label": "Country",
+                "icon": "/services/web/resources/unicons/0-plus.svg",
+                "order": "1"
+            },
+            {
+                "name": "2",
+                "label": "City",
+                "icon": "/services/web/resources/unicons/10-plus.svg",
+                "order": "2"
+            }
+        ],
+        "navigations": []
+    }
+}

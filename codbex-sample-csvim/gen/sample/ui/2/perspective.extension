@@ -1,0 +1,5 @@
+{
+    "module": "codbex-sample-csvim/gen/sample/ui/2/perspective.js",
+    "extensionPoint": "application-perspectives",
+    "description": "codbex-sample-csvim - Perspective - 2"
+}

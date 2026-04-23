@@ -1,0 +1,5 @@
+{
+    "module": "codbex-sample-csvim/gen/sample/ui/1/Country/dialog-window/view.js",
+    "extensionPoint": "application-windows",
+    "description": "codbex-sample-csvim - Application Dialog Window"
+}
